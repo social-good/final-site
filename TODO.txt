@@ -1,0 +1,10 @@
+- Minimization/Maximization functionality
+- Timelines SVG sync's with the animation. 
+- Credits sequence sync's with its animation
+	- Position of credits on screen?
+	- Create a credits sequence from text.
+- Styling
+	- Make the paths arcs
+	- Convert the trees' height and width to percentages
+- Convert the map to an equal-area projection.
+- Mobile friendly

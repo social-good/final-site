@@ -1,0 +1,102 @@
+body {
+	position: absolute;
+	color: darkslategrey;
+	margin: 0;
+	width: 100%;
+	height: 100%;
+	font-family: Verdana, Geneva, sans-serif
+}
+
+.headerParent {
+	top: 0px;
+	height: 59.5vh;
+	background-color: white;
+	position: fixed;
+    z-index: 99;
+}
+
+.map-panel {
+	/* position: fixed; */
+	/* top: 0px; */
+	height: 49.5vh;
+	border-bottom: 5px solid white;
+	width: 99.5vw;
+	/* z-index: 2; */
+	pointer-events: none;
+	background-color: white;
+}
+
+.data-behind{
+    padding: 20px 450px 0px 400px; 
+    color: darkslategrey;
+    /* z-index: 3; */
+    /* position: fixed; */
+    border-top: 5px solid black;
+/*    border-bottom: 5px solid black;*/
+    top: 210px;
+    height: 10.5vh;
+}
+
+.mark-hamill{
+    
+/*
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+*/
+/*    margin: auto;*/
+}
+
+.credits-layer {
+/*	position: absolute;*/
+	/* top: 49.5vh; */
+	width: 100%;
+    color: lightgrey;
+	z-index: 0;
+	pointer-events: none;
+}
+
+.information-panel {
+	/* position: absolute; */
+	/* top: 0px; */
+	/*height: 99.5vh;*/
+	/*	overflow-y: scroll;*/
+	background-color: lightskyblue;
+    
+    /* skyblue, lightseagreen */
+	margin-top: 60.5vh;
+}
+
+.information-panel .article {
+	/* width: 100%; */
+	/* height: 49.5vh; */
+	/* position: relative; */
+	/* top: 49.5vh; */
+	z-index: 1;
+}
+
+.information-panel .article .offset {
+	position: fixed;
+	top: 49.5vh;
+	width: 100%;
+	height: 10%;
+	background-image: linear-gradient(black, #0000);
+	z-index: 2;
+}
+.information-panel .article .header {
+	text-align: center;
+	padding-top: 70px;
+	padding-bottom: 70px;
+}
+.information-panel .article .sample-credits {
+	margin: 20px;
+	text-align: center;
+}
+
+.information-panel .article .header-title {
+	font-size: 70px;
+	font-weight: bold;
+}
+.information-panel .article .header-subtitle {
+	font-size: 20px;
+}
