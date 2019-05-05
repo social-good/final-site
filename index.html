@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Stay for the Credits</title>
+	<title>Credit Connections</title>
 	<!-- Stylesheets -->
 	<link rel="stylesheet" type="text/css" href="./stylesheets/mapStyle.css" />
 	<link rel="stylesheet" type="text/css" href="./stylesheets/treeStyle.css" />
@@ -22,7 +22,22 @@
     
         <div class="headerParent">
 
-		<div class="map-panel">
+		<div class="map-panel">     
+       
+        <span class="popuptextleft" id="textpanelleft"> 
+        "Sometimes it all comes down to the Screen Actors Guild and the IMDB," says Matt Fletcher, who represents Hannah Montana actor Moises Arias, another real name. The actors union has rules dictating there can be no two members with the exact same name, so—by way of very real example—a man who was born Michael Douglas may become Michael Keaton (and he did)." 
+        
+        </span>   
+        
+        <span class="popuptext" id="textpanel"> 
+        Lines are going everywhere (from America)! But if you have some hesitations about what you just saw, that's good, because name, while good indicators of heritage, don't map (for lack of a un-pun-loaded word) people precisely to their ethnographic "homeland." There are a lot of confounding factors, and the most immediately concerning of which for the type of onomastic assumption we're doing is name-changes. 
+        
+<!--
+        Going back to the Star Wars example, let's consider Princess Leia's actress, Natalie Portman. Born Natalie Herschlag, she changed her name to (...fame...). 'Portman,' literally meaning (), invokes an area more geographically native to (Britain). In other words, she dropped her German-sounding name for one (more pronouncable, and therefore more marketable).
+					(Dual tree diagram + Map time + explanation).
+-->
+        
+        </span>
         
 		<svg id="svg_map" 
 			xmlns:cc="http://creativecommons.org/ns#" 
@@ -849,12 +864,31 @@
                     &nbsp; &nbsp; <a href="https://towardsdatascience.com/spicing-up-feature-film-credits-with-classification-part-ii-c715d8375975" target="_blank"> 
                     PART II  </a> </span>
                     &nbsp; &nbsp;
-        	<span> CONTACT US </span>
+        	<button id="myBtn"> CONTACT US </button>
+        	<!-- The Modal -->
+            <div id="myModal" class="modal">
+
+              <!-- Modal content -->
+              <div class="modal-content">
+                <div class="modal-header">
+                  <span class="close">&times;</span>
+                  <h2> CONTACT INFORMATION </h2>
+                </div>
+                <div class="modal-body">
+                  <img src="contactfill.png" style="width: 60em; height: 20em;">
+                </div>
+                <div class="modal-footer">
+                  <h3>©</h3>
+                </div>
+              </div>
+
+            </div>
         </div>
 	
 	
 	</div>
 	     
+    
 	<div class="information-panel">		
 		<div class="article">
 <!--			<div class="offset"></div> -->
@@ -862,19 +896,27 @@
 				<div class="header-title">
 					Ethnic Analysis of the Motion Picture Industry
 				</div>
-				<div class="header-subtitle">
-					Open-source data and identity approximation tools give perspective on diaspora, ethnic representation, and fairness in film.
-				</div>
+				<h1 class="header-subtitle">
+<!--					Open-source data and identity approximation tools give perspective on diaspora, ethnic representation, and fairness in film.-->
+                        DO YOU CARE FOR THE CREDITS !?
+				</h1>
 			</div>
-			<div class="introduction">
+			
+<!--			<div class="introduction">-->
+<!--
 				Let's set the scene. (Early historical thing about misrepresentation in Hollywood) Fast-forward X Oscar's/Academy Awards later to 2019 where we observed (another anecdote and a link to that anecdote, probably to do with white-washing). For a long time (and still, many argue), America's biggest export was "The American Dream." High-budget motion picture, television, and music productions concentrated what it was like to live in a thriving free market and democracy. Now, our immigration policy (aimed towards isolationism) is on a world stage with international coverage of our highly-politicized reinforcement of the US-Mexico border wall. It seems almost cliquey to say "you can't sit with us" to outsiders, then broadcast how great it is to have citizenship, especially since many of the voices and faces came from the regions we're turning away. (Juan tried to get citizenship, a stable businessman in Havana. He couldn't get it, but we bump Camila's Havana throughout our own and other countries. They still have CD stores with American RnB and rap artists.)
 				<br />
 				When you think about the names that scroll by in credit sequences at the end of movies, and consider that roughly 90% of the people behind those names have ethnic roots in the Eastern hemipshere, our prized cultural exports fall under question. I wondered, what ethnicities are to thank for the movies we love? Can you source the talent that goes into making a movie, geographically? It turns out, you can; this is where onomastics comes in handy. 
 				<br />
 				The ways people are named are steeped in tradition. If you're reading this, you're probably most familiar and comfortable with the "GIVEN (MIDDLE) FAMILY" name format, but there's tremendous variation in how people structure their names, making names a rich attribute of identity. They're also the substance of film's most notoriously dull format, which, I hope, you'll find more interesting after reading this. Let's see what we can learn from one.
-			</div>
+-->
+                
+                
+                
+                
+<!--			</div>-->
 			<div class="mark-hamill">
-			    <audio controls class="playaudio"> <source src="mark.mp3" type="audio/mpeg"> </audio>
+			    <audio controls class="playaudio"> <source src="mark1.mp3" type="audio/mpeg"> </audio>
 				<div class="mark-hamill-tree">
 				</div>
 				
@@ -885,57 +927,71 @@
 				</div>
 -->
 			</div>
-			<div class="sample-credits">
-			    <div style="font-size: 25px;"> <b> CLICK BELOW TO SEE THE MAPPING OF THE FOLLOWING NAMES </b> </div> <br/>
+			<div class="tooltip">
+			<div class="sample-credits"> 
+<!--			    <div style="font-size: 25px;"> <b> CLICK BELOW TO SEE THE MAPPING OF THE FOLLOWING NAMES </b> </div> <br/>-->
 				<div class="sample-credits-sample" onclick="launchSequenceSample()">
-					<div class="credit-row"><div class="credit-name">Mark Hamill</div><div class="credit-role">Luke Skywalker</div></div>
-					<div class="credit-row"><div class="credit-name">Harrison Ford</div><div class="credit-role">Han Solo</div></div>
-					<div class="credit-row"><div class="credit-name">Carrie Fisher</div><div class="credit-role">Princess Leia Organa</div></div>
-					<div class="credit-row"><div class="credit-name">George Lucas</div><div class="credit-role">Executive Producer</div></div>
-					<div class="credit-row"><div class="credit-name">Gary Kurtz</div><div class="credit-role">Producer</div></div>
-					<div class="credit-row"><div class="credit-name">John Williams</div><div class="credit-role">Original Music Composer</div></div>
-					<div class="credit-row"><div class="credit-name">Gilbert Taylor</div><div class="credit-role">Director of Photography</div></div>
-					<div class="credit-row"><div class="credit-name">George Lucas</div><div class="credit-role">Writer</div></div>
-					<div class="credit-row"><div class="credit-name">Richard Chew</div><div class="credit-role">Editor</div></div>
-					<div class="credit-row"><div class="credit-name">Paul Hirsch</div><div class="credit-role">Editor</div></div>
-					<div class="credit-row"><div class="credit-name">Marcia Lucas</div><div class="credit-role">Editor</div></div>
-					<div class="credit-row"><div class="credit-name">Dianne Crittenden</div><div class="credit-role">Casting</div></div>
-					<div class="credit-row"><div class="credit-name">Irene Lamb</div><div class="credit-role">Casting</div></div>
-					<div class="credit-row"><div class="credit-name">Vic Ramos</div><div class="credit-role">Casting</div></div>
-					<div class="credit-row"><div class="credit-name">John Barry</div><div class="credit-role">Production Design</div></div>
-					<div class="credit-row"><div class="credit-name">Leslie Dilley</div><div class="credit-role">Art Direction</div></div>
+				    <span class="tooltiptext"> Click me and check the map! </span>
+				    <table style="text-align: left; border: 1px black;">
+                    
+					<tr class="credit-row"><td class="credit-name">Mark Hamill</td><td class="credit-role">Luke Skywalker</td></tr>
+					<tr class="credit-row"><td class="credit-name">Harrison Ford</td><td class="credit-role">Han Solo</td></tr>
+					<tr class="credit-row"><td class="credit-name">Carrie Fisher</td><td class="credit-role">Princess Leia Organa</td></tr>
+					<tr class="credit-row"><td class="credit-name">George Lucas</td><td class="credit-role">Executive Producer</td></tr>
+					<tr class="credit-row"><td class="credit-name">Gary Kurtz</td><td class="credit-role">Producer</td></tr>
+					<tr class="credit-row"><td class="credit-name">John Williams</td><td class="credit-role">Original Music Composer</td></tr>
+					<tr class="credit-row"><td class="credit-name">Gilbert Taylor</td><td class="credit-role">Director of Photography</td></tr>
+					<tr class="credit-row"><td class="credit-name">George Lucas</td><td class="credit-role">Writer</td></tr>
+					<tr class="credit-row"><td class="credit-name">Richard Chew</td><td class="credit-role">Editor</td></tr>
+					<tr class="credit-row"><td class="credit-name">Paul Hirsch</td><td class="credit-role">Editor</td></tr>
+					<tr class="credit-row"><td class="credit-name">Marcia Lucas</td><td class="credit-role">Editor</td></tr>
+					<tr class="credit-row"><td class="credit-name">Dianne Crittenden</td><td class="credit-role">Casting</td></tr>
+					<tr class="credit-row"><td class="credit-name">Irene Lamb</td><td class="credit-role">Casting</td></tr>
+					<tr class="credit-row"><td class="credit-name">Vic Ramos</td><td class="credit-role">Casting</td></tr>
+					<tr class="credit-row"><td class="credit-name">John Barry</td><td class="credit-role">Production Design</td></tr>
+					<tr class="credit-row"><td class="credit-name">Leslie Dilley</td><td class="credit-role">Art Direction</td></tr>
+					</table>
+					
 				</div>
+                </div>
 				<div class="sample-credits-explanation" >
-					What we saw from that. Lines are going everywhere (from America)! (Some specifics about what was observed). But if you have some hesitations about what you just saw, that's good, because name, while good indicators of heritage, don't map (for lack of a un-pun-loaded word) people precisely to their ethnographic "homeland." There are a lot of confounding factors, and the most immediately concerning of which for the type of onomastic assumption we're doing is name-changes. Going back to the Star Wars example, let's consider Princess Leia's actress, Natalie Portman. Born Natalie Herschlag, she changed her name to (...fame...). 'Portman,' literally meaning (), invokes an area more geographically native to (Britain). In other words, she dropped her German-sounding name for one (more pronouncable, and therefore more marketable).
-					(Dual tree diagram + Map time + explanation).
+				    <br/>
+					 Going back to the Star Wars example, let's consider Princess Leia's actress, Natalie Portman. Born Natalie Herschlag, she changed her name to (...fame...). 'Portman,' which invokes an area more geographically native to (Britain). In other words, she dropped her German-sounding name for one (more pronouncable, and therefore more marketable). 
+					
 				</div>
 			</div>
 
 			
 
-
 			<div class="natalie-portman">
-			    <audio controls> <source src="natalie.mp3" type="audio/mpeg"> </audio>
+                            <br/> <br/>
+
+			    <audio controls> <source src="natalie1.mp3" type="audio/mpeg"> </audio>
 				<div class="natalie-portman-tree">
 				</div>
 				<div class="natalie-portman-explanation">
-					Again, the top branch is an ethnicity prediction from NamSor's API, which processes someone's name and country of residence. Below that is the "meaning" of Natalie's first and last names provided by Baby Name Wizard and Ancestry respectively. In this case, NamSor was most confident about "Natalie Portman" being an originally-British name.
+<!--					Again, the top branch is an ethnicity prediction from NamSor's API, which processes someone's name and country of residence. Below that is the "meaning" of Natalie's first and last names provided by Baby Name Wizard and Ancestry respectively. In this case, NamSor was most confident about "Natalie Portman" being an originally-British name.-->
 				</div>
 			</div>
 
 			<div class="sample-name-change">
+                <br/> <b> BELOW ARE FEW PEOPLE WHO CHANGED THEIR NAMES! </b><br/> <br/>
 				<div class="sample-name-change-sample" onclick="launchNameChange()">
-				    <br/> BELOW ARE FEW PEOPLE WHO CHNAGED THEIR NAMES! (Click on them to see their mapping at the top) <br/> <br/>
-				    Natalie Portman -> Natalie Herschlag<br/>
-					Stanley Lieber -> Stan Lee<br/>
-					Mahershalahazba Something -> Mahershala Ali<br/>
-					Something Else -> Woopie Goldberg<br/>
-					Another Name -> Marilyn Monroe<br/>
-					...
+				   
+				    <div class="tooltip">
+                        <span class="tooltiptext"> Click me and check the map! </span>
+				    Natalie Portman &nbsp; &nbsp; &nbsp;&nbsp; &nbsp; &nbsp;&nbsp; -> &nbsp;&nbsp;Natalie Herschlag<br/>
+					Stanley Lieber&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;->  &nbsp;&nbsp;Stan Lee<br/>
+					Mark Sinclair &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ->  &nbsp;&nbsp;Vin Diesel<br/>
+					Elizabeth Stamatina Fey ->  &nbsp;&nbsp;Tina Fey <br/> <br/>
+					
+					</div>
 				</div>
 				<div class="sample-name-change-explanation" style="font-size: 25px;">
 <!--					Look at some of these changes. Interesting finds!-->
+                        
                         Intrigued by the findings? Check out our "Data Behind the scene" and the conclusion articles mentioned above!! 
+                        <br/> <br/> <hr>
                         
 				</div>
 			</div>
@@ -957,7 +1013,8 @@
 			</div>
 -->
 		</div>	
-		<div class="credits-layer">
+<!--		<div class="credits-layer">-->
+<!--
 			<div class="credit-row"><div class="credit-name">Mark Hamill</div><div class="credit-role">Luke Skywalker</div></div>
 			<div class="credit-row"><div class="credit-name">Harrison Ford</div><div class="credit-role">Han Solo</div></div>
 			<div class="credit-row"><div class="credit-name">Carrie Fisher</div><div class="credit-role">Princess Leia Organa</div></div>
@@ -1104,6 +1161,37 @@
 			<div class="credit-row"><div class="credit-name">Ron Beck</div><div class="credit-role">Wardrobe Supervisor</div></div>
 			<div class="credit-row"><div class="credit-name">Gary Rizzo</div><div class="credit-role">Sound Mix Technician</div></div>
 		</div>
+-->
 	</div>
+	
+	<script>
+            // Get the modal
+            var modal = document.getElementById('myModal');
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+              if (event.target == modal) {
+                modal.style.display = "none";
+              }
+            }
+    </script>
+
+	
 </body>
 </html>

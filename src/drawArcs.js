@@ -83,6 +83,12 @@ function launchSequenceSample() {
 	var nataliePath1 = document.getElementById('natalieportman1');
 	var nataliePath2 = document.getElementById('natalieportman2');
 	var nataliePathError = document.getElementById('natalieportmanError');
+    var popupbox = document.getElementById('textpanel');
+    popupbox.setAttribute('style','visibility:visible');    
+
+//    if(popupbox) {
+//        popupbox.setAttribute('style','visibility:visible');   
+//    }
 	if (markpath) {
 		markpath.parentNode.removeChild(markpath);
 		markhamill = false;
@@ -100,6 +106,9 @@ function launchSequenceSample() {
 		natalieportman = false;
 	}
 
+//    var popupbox = document.getElementById('popuptext');
+//    popupbox.setAttribute("visibility","visible");
+    
 	var starWars = JSON.parse(StarWarsJSON);
 	const cast = Object.entries(starWars.cast);
 	const crew = Object.entries(starWars.crew);
@@ -135,6 +144,7 @@ function launchSequenceSample() {
 			oldPath.parentNode.removeChild(oldPath);
 		}, 2100);
 	}
+        
 }
 
 async function launchNameChange() {
@@ -143,6 +153,9 @@ async function launchNameChange() {
 	var nataliePath1 = document.getElementById('natalieportman1');
 	var nataliePath2 = document.getElementById('natalieportman2');
 	var nataliePathError = document.getElementById('natalieportmanError');
+    var popupboxleft = document.getElementById('textpanelleft');
+    popupboxleft.setAttribute('style','visibility:visible');    
+    
 	if (markpath) {
 		markpath.parentNode.removeChild(markpath);
 		markhamill = false;

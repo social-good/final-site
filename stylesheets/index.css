@@ -39,12 +39,23 @@ body {
 
 .mark-hamill{
     
-/*
+
     margin-left: auto;
     margin-right: auto;
-    width: 20em;
-*/
+    width: 60em;
+    overflow: hidden;
+
 /*    margin: auto;*/
+}
+
+.natalie-portman {
+    
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 60em;
+    overflow: hidden;
+    
 }
 
 .credits-layer {
@@ -56,12 +67,14 @@ body {
 	pointer-events: none;
 }
 
+
 .information-panel {
 	/* position: absolute; */
 	/* top: 0px; */
 	/*height: 99.5vh;*/
 	/*	overflow-y: scroll;*/
-	background-color: lightskyblue;
+/*	background-color: #ccff99;*/
+    background: linear-gradient(to top, #ccff99 -1%, #ff9966 130%);
     
     /* skyblue, lightseagreen */
 	margin-top: 60.5vh;
@@ -98,5 +111,213 @@ body {
 	font-weight: bold;
 }
 .information-panel .article .header-subtitle {
-	font-size: 20px;
+	font-size: 30px;
 }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 300px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+/*  bottom: 100%;*/
+/*  left: 50%;*/
+  margin-left: 200px;
+  margin-top: 100px;
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1;
+}
+
+.credit-row {
+/*      text-shadow: 2px 2px 2px white;*/
+/*    color: white;*/
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px grey;
+}
+
+
+.credit-name{
+    width: 200px;
+}
+
+.credit-role {
+    width: 200px;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 35%;
+    margin: auto;
+}
+
+/*
+.popup {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  margin-top: 20px;
+}
+*/
+
+#textpanel {
+  visibility: hidden;
+  width: 400px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 100;
+/*  bottom: 100%;*/
+/*  left: 50%;*/
+  margin-left: 1100px;
+  margin-top: 20px;
+  font-size: 15px;
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+/*  opacity: 0;*/
+  transition: opacity 1s;
+}
+
+/*
+.popup:hover .popuptext {
+  visibility: visible;
+  opacity: 1;
+}
+*/
+
+.sample-name-change-sample {
+    
+      text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px grey;
+
+}
+
+#textpanelleft {
+  visibility: hidden;
+  width: 400px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 100;
+/*  bottom: 100%;*/
+/*  left: 50%;*/
+  margin-left: 20px;
+  margin-top: 150px;
+  font-size: 15px;
+  
+  /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
+/*  opacity: 0;*/
+  transition: opacity 1s;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  -webkit-animation-name: fadeIn; /* Fade in the background */
+  -webkit-animation-duration: 0.4s;
+  animation-name: fadeIn;
+  animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+  position: fixed;
+  bottom: 0;
+  background-color: #fefefe;
+  width: 100%;
+  z-index: 999;
+  -webkit-animation-name: slideIn;
+  -webkit-animation-duration: 0.4s;
+  animation-name: slideIn;
+  animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 1px 1px;
+  background-color: black;
+  color: white;
+  font-size: 10px;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: black;
+  color: white;
+  font-size: 10px;
+
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {bottom: -300px; opacity: 0} 
+  to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+  from {bottom: -300px; opacity: 0}
+  to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0} 
+  to {opacity: 1}
+}
+
