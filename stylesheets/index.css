@@ -117,7 +117,9 @@ body {
 .tooltip {
   position: relative;
   display: inline-block;
-  border-bottom: 1px dotted black;
+    cursor: pointer;
+
+/*  border-bottom: 1px dotted black;*/
 }
 
 .tooltip .tooltiptext {
@@ -134,7 +136,7 @@ body {
 /*  left: 50%;*/
   margin-left: 200px;
   margin-top: 100px;
-  
+/*  cursor: pointer;*/
   /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
   opacity: 0;
   transition: opacity 1s;
@@ -185,8 +187,8 @@ table {
 #textpanel {
   visibility: hidden;
   width: 400px;
-  background-color: black;
-  color: #fff;
+  background-color: lightgray;
+  color: black;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
@@ -200,7 +202,9 @@ table {
   
   /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
 /*  opacity: 0;*/
-  transition: opacity 1s;
+/*  transition: opacity 1s;*/
+    opacity: 1;
+    animation: fadeIn 5s linear;
 }
 
 /*
@@ -219,8 +223,8 @@ table {
 #textpanelleft {
   visibility: hidden;
   width: 400px;
-  background-color: black;
-  color: #fff;
+  background-color: lightgray;
+  color: black;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
@@ -233,8 +237,11 @@ table {
   font-size: 15px;
   
   /* Fade in tooltip - takes 1 second to go from 0% to 100% opac: */
-/*  opacity: 0;*/
-  transition: opacity 1s;
+/*  opacity: 1;*/
+/*  transition: opacity 1s;*/
+  opacity: 1;
+  animation: fadeIn 5s linear;
+
 }
 
 /* The Modal (background) */
@@ -319,5 +326,5 @@ table {
 @keyframes fadeIn {
   from {opacity: 0} 
   to {opacity: 1}
+  
 }
-

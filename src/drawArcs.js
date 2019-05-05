@@ -85,6 +85,8 @@ function launchSequenceSample() {
 	var nataliePathError = document.getElementById('natalieportmanError');
     var popupbox = document.getElementById('textpanel');
     popupbox.setAttribute('style','visibility:visible');    
+    var popupboxleft = document.getElementById('textpanelleft');
+    popupboxleft.setAttribute('style','visibility:hidden');
 
 //    if(popupbox) {
 //        popupbox.setAttribute('style','visibility:visible');   
@@ -154,7 +156,9 @@ async function launchNameChange() {
 	var nataliePath2 = document.getElementById('natalieportman2');
 	var nataliePathError = document.getElementById('natalieportmanError');
     var popupboxleft = document.getElementById('textpanelleft');
-    popupboxleft.setAttribute('style','visibility:visible');    
+    popupboxleft.setAttribute('style','visibility:visible');
+    var popupbox = document.getElementById('textpanel');
+    popupbox.setAttribute('style','visibility:hidden');  
     
 	if (markpath) {
 		markpath.parentNode.removeChild(markpath);
