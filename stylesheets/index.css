@@ -189,7 +189,7 @@ table {
 #textpanel {
   visibility: hidden;
   width: 400px;
-  background-color: lightgray;
+  background-color: slategrey;
   color: black;
 /*  text-align: center;*/
   border-radius: 6px;
@@ -226,7 +226,7 @@ table {
 #textpanelleft {
   visibility: hidden;
   width: 400px;
-  background-color: lightgray;
+  background-color: slategrey;
   color: black;
 /*  text-align: center;*/
   border-radius: 6px;
