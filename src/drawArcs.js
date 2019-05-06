@@ -164,6 +164,8 @@ async function launchNameChange() {
 		markpath.parentNode.removeChild(markpath);
 		markhamill = false;
 	}
+    
+//    changes
 	if (nataliePath1) {
 		nataliePath1.parentNode.removeChild(nataliePath1);
 		natalieportman = false;
