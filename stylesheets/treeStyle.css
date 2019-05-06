@@ -13,8 +13,8 @@
 }
 
 .node text {
-	font: 12px sans-serif;
-	fill: darkslategrey;
+	font: 14px sans-serif;
+	fill: black;
 }
 
 .link {

@@ -28,7 +28,7 @@ body {
 
 .data-behind{
     padding: 20px 450px 0px 400px; 
-    color: darkslategrey;
+    color: black;
     /* z-index: 3; */
     /* position: fixed; */
     border-top: 5px solid black;
@@ -39,7 +39,7 @@ body {
 
 .mark-hamill{
     
-
+    
     margin-left: auto;
     margin-right: auto;
     width: 60em;

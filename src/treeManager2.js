@@ -11,7 +11,7 @@ function drawTree2(clickHandler) {
 				},
 				{				
 					"name": "Natalie",
-					"description": "Baby Name Wizard: English cognate of the Latin Natalia, a name derived from diēs nātālis (natal day, Christmas)",
+					"description": "Baby Name Wizard: English cognate of the Latin Natalia, a name derived from diēs nātālis (natal day)",
 					"parent": "Natalie Portman"
 				},
 				{
@@ -20,24 +20,24 @@ function drawTree2(clickHandler) {
 					"parent": "Natalie Portman"
 				},
 				{
-					"name": "OLD NAMES",
+					"name": "OLD NAME",
 					"description": "Natalie Herschlag",
 					"parent": "Natalie Portman",
 					"_children": [
 						{
 							"name": "Natalie Herschlag",
 							"description": "NamSor: Jewish, (German)",
-							"parent": "OLD NAMES",
+							"parent": "OLD NAME",
 						},
 						{				
 							"name": "Natalie",
-							"description": "Baby Name Wizard: English cognate of the Latin Natalia, a name derived from diēs nātālis (natal day, Christmas)",
-							"parent": "OLD NAMES"
+							"description": "Baby Name Wizard:English cognate of the Latin Natalia, a name derived from diēs nātālis (natal day)",
+							"parent": "OLD NAME"
 						},
 						{
 							"name": "Herschlag",
 							"description": "Wikipedia: Herschlag is a German surname.",
-							"parent": "OLD NAMES"
+							"parent": "OLD NAME"
 						},
 					]
 				}
@@ -47,7 +47,7 @@ function drawTree2(clickHandler) {
 
 	// ************** Generate the tree diagram	 *****************
 	var margin = {top: 20, right: 120, bottom: 20, left: 120},
-		width = window.innerWidth - margin.right - margin.left - 15,
+		width = window.innerWidth - margin.right - margin.left -12,
 		height = window.innerHeight/2 - margin.top - margin.bottom;
 		
 	var i = 0,
@@ -108,10 +108,10 @@ function drawTree2(clickHandler) {
 		
 		nodeEnter.append("text")
 			.attr("x", function(d) { return d.children || d._children ? -13 : 13; })
-			.attr("dy", ".8em")
+			.attr("dy", "0.8em")
 			.append('svg:tspan')
 			.attr('x', function(d) { return d.children || d._children ? -13 : 13; })
-			.attr('dy', ".8em")
+			.attr('dy', "1.5em")
 			.attr("text-anchor", function(d) { return d.children || d._children ? "end" : "start"; })
 			.text(function(d) { return d.description; })
 			.style("fill-opacity", 1);
