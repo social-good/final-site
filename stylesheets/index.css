@@ -1,7 +1,7 @@
 body {
 	position: absolute;
 	color: black;
-	margin: 0;
+	margin: 0px;
 	width: 100%;
 	height: 100%;
 	font-family: Verdana, Geneva, sans-serif
@@ -75,7 +75,7 @@ body {
 	/*	overflow-y: scroll;*/
 /*	background-color: #ccff99;*/
     background: linear-gradient(to top, #B3CADD -1%, #527A9C 130%);
-    
+     
     /* skyblue, lightseagreen */
 	margin-top: 60.5vh;
 }
@@ -150,12 +150,14 @@ body {
 .credit-row {
 /*      text-shadow: 2px 2px 2px white;*/
 /*    color: white;*/
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px grey;
+  color: white;
 }
 
 
 .credit-name{
     width: 200px;
+    text-align: right;
+    
 }
 
 .credit-role {
@@ -163,7 +165,7 @@ body {
 }
 
 td, th {
-  border: 1px solid #dddddd;
+/*  border: 1px solid #dddddd;*/
   text-align: left;
   padding: 8px;
 }
@@ -328,4 +330,12 @@ table {
   from {opacity: 0} 
   to {opacity: 1}
   
+}
+
+.creditstable {
+    
+    text-align: left; 
+/*    border: 1px black;*/
+    background-color: #131E27;
+    border-collapse: collapse;
 }
